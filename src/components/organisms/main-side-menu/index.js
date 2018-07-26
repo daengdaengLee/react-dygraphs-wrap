@@ -26,6 +26,11 @@ const MainSideMenu = () => (
         <Link to="/demo/4">Demo 4</Link>
       </ListItemText>
     </ListItem>
+    <ListItem>
+      <ListItemText inset disableTypography>
+        <Link to="/demo/wrapper">Wrapper Demo</Link>
+      </ListItemText>
+    </ListItem>
   </List>
 );
 
