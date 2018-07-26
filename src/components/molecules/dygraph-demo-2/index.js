@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Dygraph from 'dygraphs';
 
+const ROOT_PATH =
+  process.env.NODE_ENV === 'production' ? '/react-dygraphs-wrap' : '';
+
 class DygraphDemo2 extends Component {
   constructor(props) {
     super(props);
@@ -15,7 +18,11 @@ class DygraphDemo2 extends Component {
   }
 
   componentDidMount() {
-    new Dygraph(this.dygraphContainer.current, '/csv/temperatures.csv', {});
+    new Dygraph(
+      this.dygraphContainer.current,
+      `${ROOT_PATH}/csv/temperatures.csv`,
+      {},
+    );
   }
 }
 
