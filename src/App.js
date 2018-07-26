@@ -1,21 +1,15 @@
-import React, { Component } from 'react';
-import DygraphDemo1 from './components/DygraphDemo1';
-import DygraphDemo2 from './components/DygraphDemo2';
-import DygraphDemo3 from './components/DygraphDemo3';
-import DygraphDemo4 from './components/DygraphDemo4';
+import React, { Fragment } from 'react';
+import { HashRouter as Router } from 'react-router-dom';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import MainPage from './components/pages/main-page';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        Hi React!
-        <DygraphDemo1 />
-        <DygraphDemo2 />
-        <DygraphDemo3 />
-        <DygraphDemo4 />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Router>
+    <Fragment>
+      <CssBaseline />
+      <MainPage />
+    </Fragment>
+  </Router>
+);
 
 export default App;

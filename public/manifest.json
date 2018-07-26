@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Dygraph React Wrapper",
+  "name": "Create React App for Wrapping Dygraphs",
   "icons": [
     {
       "src": "favicon.ico",
